@@ -1,11 +1,12 @@
 import React from 'react'
 
 function Employee(props) {
-  const {name}=props;
+  const {name,role}=props;
   return (
-    <div>
-    <p>Hello {name}</p>  
-    </div>
+    <>
+    <h2>Hello {name?name:"Unknown"}</h2>  
+    <p>role: {role}</p>
+    </>
   )
 }
 
